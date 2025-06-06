@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-fund-macro
+  labels:
+    app: stock-fund-macro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-fund-macro
+  template:
+    metadata:
+      labels:
+        app: stock-fund-macro
+    spec:
+      containers:
+      - name: stock-fund-macro
+        image: stock-fund-macro:latest
+        ports:
+        - containerPort: 8080
