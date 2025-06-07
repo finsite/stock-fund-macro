@@ -16,7 +16,7 @@ spec:
         app: stock-fund-macro
     spec:
       containers:
-      - name: stock-fund-macro
-        image: stock-fund-macro:latest
-        ports:
-        - containerPort: 8080
+        - name: stock-fund-macro
+          image: stock-fund-macro:latest
+          ports:
+            - containerPort: 8080
