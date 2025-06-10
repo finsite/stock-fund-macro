@@ -23,6 +23,7 @@ def process_macro_data(data: dict[str, Any]) -> dict[str, Any]:
 
     Returns:
         dict[str, Any]: The validated and enriched message ready for output.
+
     """
     if "indicator" not in data or "value" not in data:
         logger.warning("📉 Invalid macro data: missing required fields.")
